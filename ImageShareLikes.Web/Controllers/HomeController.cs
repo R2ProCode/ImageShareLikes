@@ -42,7 +42,7 @@ namespace ImageShareLikes.Web.Controllers
 
             var uploadedImage = new Image
             {
-                ImagePath = fullPath,
+                FileName = fileName,
                 Title = title,
                 DateCreated = DateTime.Now,
                 Likes = 0

@@ -4,7 +4,7 @@
     <input type="hidden" id="id" value="@Model.Image.Id" />
     <h3>@Model.Image.Title</h3>
 
-    <img src="https://localhost:7140/uploads/@Model.Image.ImagePath" class="img-fluid" style="max-width:800px;" />
+    <img src="https://localhost:7140/uploads/@Model.Image.FileName" class="img-fluid" style="max-width:800px;" />
 
     <div class="mt-3">
         <button id="btn-like" class="btn btn-primary" @(Model.LikedAlready !=null && Model.LikedAlready.Contains(Model.Image.Id) ? "disabled" : "")>Like</button>
