@@ -1,0 +1,27 @@
+﻿﻿<div class="container">
+    <div class="row justify-content-center ">
+        <div class="col-md-6 col-lg-5">
+            <div class="bg-white shadow-lg rounded-5 p-5 border">
+                <div class="text-center mb-5">
+                    <div class="display-4 mb-3">☁️</div>
+                    <h1 class="h3 fw-bold mb-2">Upload Image</h1>
+                    <p class="text-secondary mb-0">Securely share your image for others to like</p>
+                </div>
+
+                <form method="post" action="/home/upload" enctype="multipart/form-data">
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold small text-uppercase text-secondary">Title</label>
+                        <input type="text" class="form-control form-control-lg rounded-4 border-2" id="title" name="title" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold small text-uppercase text-secondary">Image</label>
+                        <input type="file" class="form-control form-control-lg rounded-4 border-2" id="image" name="image" required>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg rounded-4 w-100 py-3 fw-semibold shadow-sm">Upload Image</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

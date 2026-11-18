@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ImageShareLikes.Data/ImageShareLikes.Data.csproj" />
+  <Project Path="ImageShareLikes.Web/ImageShareLikes.Web.csproj" />
+</Solution>

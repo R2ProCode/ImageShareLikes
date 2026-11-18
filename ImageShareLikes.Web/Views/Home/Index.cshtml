@@ -1,0 +1,16 @@
+﻿@model IndexViewModel
+
+@if (Model.Images != null)
+{
+	@foreach (var image in Model.Images)
+	{
+		<div class="bg-light p-4 rounded shadow mb-3 text-center">
+			<a href="/Home/ViewImage?id=@image.Id" class="text-decoration-none text-dark">
+				<h4>@image.Title</h4>
+				<h5>Uploaded at: @image.DateCreated.ToString("MM/dd/yy h:mm tt")</h5>
+				<img src="https://localhost:7140/uploads/@image.ImagePath" class="img-fluid rounded" style="max-width:400px;" />
+			</a>
+		</div>
+	}
+
+}
