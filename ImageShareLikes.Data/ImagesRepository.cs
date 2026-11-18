@@ -16,7 +16,7 @@ namespace ImageShareLikes.Data
         public List<Image> GetImages()
         {
             using var ctx = new ImageDataContext(_connectionString);
-            return ctx.Images.ToList();
+            return ctx.Images.OrderByDescending(i => i.DateCreated).ToList();
         }
 
         public void AddImage(Image image)
