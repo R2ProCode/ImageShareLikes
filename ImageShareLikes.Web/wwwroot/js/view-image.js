@@ -19,7 +19,7 @@
 
     function refreshLikes() {
 
-        $.get('/home/GetLikes', { id }, function (likes) {
+        $.get('/home/GetLikes', { id }, function ({ likes }) {
             $("#current-likes").text(likes)
         });
     }

@@ -85,7 +85,7 @@ namespace ImageShareLikes.Web.Controllers
         public IActionResult GetLikes(int id)
         {
             var repo = new ImagesRepository(_configuration.GetConnectionString("ConStr"));
-            return Json(repo.GetImageLikes(id));
+            return Json(new { Likes = repo.GetImageLikes(id) });
         }
     }
 }
