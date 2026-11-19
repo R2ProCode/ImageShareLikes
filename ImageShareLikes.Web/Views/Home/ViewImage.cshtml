@@ -1,7 +1,7 @@
 ﻿@model ViewImageViewModel
 
 <div class="container text-center mt-4">
-    <input type="hidden" id="id" value="@Model.Image.Id" />
+    <input type="hidden" name="id" id="id" value="@Model.Image.Id" />
     <h3>@Model.Image.Title</h3>
 
     <img src="https://localhost:7140/uploads/@Model.Image.FileName" class="img-fluid" style="max-width:800px;" />
